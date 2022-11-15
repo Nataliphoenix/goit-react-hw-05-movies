@@ -30,8 +30,7 @@ export function MovieCard({ movieCardDetails }) {
         <CardPost
           src={
             `https://image.tmdb.org/t/p/w500${movieCardDetails.poster_path}`
-              ? `https://image.tmdb.org/t/p/w500${movieCardDetails.poster_path}`
-              : `https://i.ibb.co/0GKG6L1/img-Modal-Review.jpg`
+              || `https://i.ibb.co/0GKG6L1/img-Modal-Review.jpg`
           }
           alt=""
         />
